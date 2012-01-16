@@ -1,0 +1,31 @@
+<application>
+
+	<name>AppCore Creator</name> 
+    <author>Akbarsait</author> 
+    <version>1.0</version> 
+    <email>akbarsaitn.cfmx@gmail.com</email> 
+    <description>description.html</description> 
+    <license>license.html</license>
+	
+    <menucontributions >
+		<contribution target="projectview">
+			<menu name="AppCore Creator">
+
+				<filters>
+					<filter type="folder" />
+					<filter type="project" />
+				</filters>
+				
+				<action name="Create ColdFusion AppCore Files" 		
+						handlerid="performAppCoreFilesCreation" 	
+						showresponse="false" />
+						
+			</menu>
+		</contribution>
+    </menucontributions>	
+
+	<handlers>		
+		<handler id="performAppCoreFilesCreation" type="CFM" filename="appCoreSelector.cfm" />
+	</handlers>
+
+</application>
